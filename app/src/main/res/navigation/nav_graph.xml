@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/getResultFragment">
+
+    <fragment
+        android:id="@+id/getResultFragment"
+        android:name="com.example.passresults.GetResultFragment"
+        tools:layout="@layout/fragment_get_result"
+        android:label="GetResultFragment" >
+        <action
+            android:id="@+id/setResultBottomSheet"
+            app:destination="@id/setResultBottomSheet" />
+        <action
+            android:id="@+id/setResultFragment"
+            app:destination="@id/setResultFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/setResultBottomSheet"
+        android:name="com.example.passresults.SetResultBottomSheet"
+        android:label="SetResultBottomSheet"
+        tools:layout="@layout/fragment_set_result"/>
+    <fragment
+        android:id="@+id/setResultFragment"
+        android:name="com.example.passresults.SetResultFragment"
+        android:label="SetResultFragment"
+        tools:layout="@layout/bootom_sheet_set_result"/>
+</navigation>

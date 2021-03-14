@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="Ниже будет результат с фрагмента"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/resultFragment"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        />
+
+    <Button
+        android:id="@+id/buttonSetResultFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Фрагмент"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="Ниже будет результат с диалога"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/resultDialog"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        />
+
+    <Button
+        android:id="@+id/buttonSetResultDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Диалог"/>
+
+</LinearLayout>
